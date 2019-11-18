@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 
 class App extends React.Component {
   state = {
-    count: 1,
-    num: 4
+    count: 1
   };
   plus = () => {
     this.setState(current => ({ count: current.count + 1}));
   };
   minus = () => {
-    this.setState(current => ({ count: current.num -1}));
+    this.setState(current => ({ count: current.count -1}));
   };
 
   render() {
